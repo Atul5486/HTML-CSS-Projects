@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: white;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://snapgramv1.netlify.app/assets/images/side-img.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: transparent;
+    padding: 2rem;
+    backdrop-filter:blur(20px);
+    border-radius: 8px;
+    width: 300px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: .5rem 
+}
+p {
+    margin-top: 1rem;
+}
+
+input {
+    height: 1.4rem;
+    width: 100%;
+    padding: 8px;
+    border-radius: .7rem;
+    background-color:white;
+    font-size: 1rem;
+    margin-bottom:.5rem;
+}
+
+b{
+    font-size: 18px;
+    color: rgb(255, 49, 49);
+}
+button {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: lightseagreen;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;font-size: 1rem;
+    font-weight: 600;
+    transition: all ease .5s;
+}
+
+button:hover {
+    background-color: rgb(0, 0, 0);
+    /* font-size: 1rem; */
+}
+input[type="number"]::-webkit-inner-spin-button{
+    display: none;
+}
+.message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    color: green;
+  }
+.otp-input {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    margin: 5px;
+}
+.otp-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    color: green;
+  }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Social Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="signupSection">
+        <b>To use Instavibe, enter your details</b>
+            <h2>Create a new account</h2>
+        <form id="signupForm">
+          <label for="newUsername">Username</label>
+          <input type="text" id="newUsername" name="newUsername" placeholder="Enter your username" required>
+          <label for="fullname">Full Name</label>
+          <input type="text" id="name" placeholder="Full Name" required>  
+    
+          <label for="newPassword">Password</label>
+          <input type="password" id="newPassword" name="newPassword" placeholder="Enter your password" required>
+    
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+          <button type="submit">Sign Up</button>
+          <p>Already have an account? <a href="index.html">Log in</a></p>
+        </form>
+      </div>
+    
+      <div class="container" id="otpSection" style="display: none;">
+        <h2>Verify OTP</h2>
+        <h3 id="generatedOtp"></h3>
+        <div class="otp-container">
+          <input type="text" class="otp-input" maxlength="1" id="otp1">
+          <input type="text" class="otp-input" maxlength="1" id="otp2">
+          <input type="text" class="otp-input" maxlength="1" id="otp3">
+          <input type="text" class="otp-input" maxlength="1" id="otp4">
+          <input type="text" class="otp-input" maxlength="1" id="otp5">
+          <input type="text" class="otp-input" maxlength="1" id="otp6">
+        </div>
+        <button id="verifyOtpButton">Verify OTP</button>
+      </div>
+    <script src="app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init({ publicKey: "FiJoJnDgMuYXo8j63" });
+    })();
+  </script>
+</body>
+</html>
